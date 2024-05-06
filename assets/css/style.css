@@ -4,7 +4,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
+  background: #f8f8f8;
   color: #444444;
 }
 
@@ -670,8 +670,8 @@ h6 {
   display: flex;
   align-items: center;
   font-size: 15px;
+  color: #012970;
   font-weight: 600;
-  color: #4154f1;
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
@@ -681,7 +681,7 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: #012970;
 }
 
 .sidebar-nav .nav-link.collapsed {
@@ -694,12 +694,12 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
-  background: #f6f9ff;
+  color: #ffffff;
+  background: #012970;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #ffffff;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -737,11 +737,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: #012970;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: #012970;
 }
 
 /*--------------------------------------------------------------
