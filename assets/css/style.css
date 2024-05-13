@@ -661,3 +661,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   color: #012970;
 }
+
+/* status */
+table .text-success {
+  background-color: #d1ffe3 !important;
+}
+
+table .text-primary {
+  background-color: #beeaff !important;
+}
+
+table .text-danger {
+  background-color: #ffe6e6 !important;
+}
