@@ -21,7 +21,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Livvic", sans-serif;
 }
 
@@ -51,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #012970;
 }
-
 
 /* Back to top button */
 
@@ -84,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   opacity: 1;
 }
-
 
 /* default Bootstrap stylings override */
 
@@ -135,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu .dropdown-item:hover {
   color: white;
   background-color: #012970;
+  bor
 }
 
 @media (min-width: 768px) {
@@ -202,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
 .card-img-overlay {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
 
 /* Header */
 
@@ -590,7 +593,6 @@ h1, h2, h3, h4, h5, h6 {
 .profile .profile-edit img {
   max-width: 120px;
 }
-
 
 /* F.A.Q Page */
 

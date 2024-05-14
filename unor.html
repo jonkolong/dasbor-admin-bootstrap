@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Monev Aplikasi</title>
+    <title>Unit Kerja / Organisasi</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -90,8 +90,8 @@
         </li>
         <li class="nav-item">
           <a class="nav-link rounded-5" href="#">
-            <i class="bi bi-cpu"></i>
-            <span>Monev Aplikasi</span>
+            <i class="bi bi-diagram-3"></i>
+            <span>Unit Kerja / Organisasi</span>
           </a>
         </li>
         <!-- End Dashboard Nav -->
@@ -110,7 +110,7 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1><i class="bi bi-cpu"></i> Monev Aplikasi<span class="me-4">
+        <h1><i class="bi bi-diagram-3"></i> Unit Kerja / Organisasi<span class="me-4">
           <!-- Example split danger button -->
           <div class="btn-group">
             <button type="button" class="btn">2024</button>
@@ -127,7 +127,7 @@
         </span></h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="active ms-2"><i class="bi bi-graph-up-arrow"></i> Monitoring dan Evaluasi Aplikasi</li>
+            <li class="active ms-2"><i class="bi bi-diagram-3"></i> Daftar Unit Kerja / Organisasi</li>
           </ol>
         </nav>
       </div>
@@ -139,173 +139,109 @@
           <div class="col-lg-8">
             <div class="row">
             <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Progres entri Monev Aplikasi <span>| 2024</span></h5>
-    
-                  <!-- Pie Chart start -->
-                  <div id="pieChart"></div>
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#pieChart"), {
-                        series: [24, 13, 4],
-                        chart: {
-                          height: 350,
-                          type: 'pie',
-                          toolbar: {
-                            show: true
-                          }
-                        },
-                        labels: ['Layanan Publik', 'Administrasi Pemerintahan', 'Call Center']
-                      }).render();
-                    });
-                  </script>
-                  <!-- Pie CHart end -->
-    
-                </div>
-              </div>
             </div>
 
-              <!-- Layanan Publik Card -->
-              <div class="col-xxl-4 col-md-6">
-                <div class="card info-card sales-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Aplikasi<br>Pelayanan Publik<br><span>2024</span></h5>
-
-                    <div class="d-flex align-items-center">
-                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="bi bi-shop"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>145</h6>
-                        <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Layanan Publik Card -->
-
-              <!-- Adm Pemerintahan Card -->
-              <div class="col-xxl-4 col-md-6">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Layanan<br>Administrasi Pemerintahan<br><span>2024</span></h5>
-
-                    <div class="d-flex align-items-center">
-                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="bi bi-building"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>264</h6>
-                        <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Adm Pemerintahan Card -->
-
-              <!-- Call Center -->
-              <div class="col-xxl-4 col-md-6">
-                <div class="card info-card customers-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Layanan<br>Call Center<br><span>2024</span></h5>
-
-                    <div class="d-flex align-items-center">
-                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="bi bi-telephone"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>4</h6>
-                        <span class="text-danger small pt-1 fw-bold">300%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Table progres unit kerja start -->
+              <!-- Table unit kerja start -->
               <div class="col-12">
                 <div class="card overflow-auto">
                   <div class="card-body">
-                    <h5 class="card-title">Progres Entri Data <span>| 2024</span></h5>
-
+                    <div class="card-title">
+                      <div class="container-fluid">
+                        <div class="row align-items-start">
+                          <div class="col">
+                            Data Unit Kerja
+                          </div>
+                          <div class="col text-end">
+                            <button class="btn btn-outline-success rounded-5"><i class="bi bi-check-circle-fill me-1"></i> Tambah</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <table class="table table-hover datatable">
                       <thead>
                         <tr class="text-danger">
                           <th scope="col" class="align-middle text-center">No</th>
                           <th scope="col" class="align-middle">Unit Kerja</th>
-                          <th scope="col" class="text-wrap text-center align-middle">Aplikasi Pelayanan Publik</th>
-                          <th scope="col" class="text-wrap text-center align-middle">Administrasi Pemerintahan</th>
-                          <th scope="col" class="text-wrap text-center align-middle">Call Center</th>
-                          <th scope="col" class="text-wrap text-center align-middle">Status</th>
+                          <th scope="col" class="text-wrap text-center align-middle">Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row" class="align-middle text-center">1</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Komunikasi, Informatika, Statistik dan Persandian<a/></td>
-                          <td class="align-middle text-center">1</td>
-                          <td class="align-middle text-center">4</td>
-                          <td class="align-middle text-center">1</td>
-                          <td class="align-middle text-center"><a class="badge text-success align-middle rounded-5"><i class="bi bi-check-circle-fill me-1"></i>selesai</a></td>
+                          <td class="text-wrap text-decoration-none">Dinas Komunikasi, Informatika, Statistik dan Persandian</td>
+                          <td class="align-middle text-center">
+                            <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                            <span>
+                              <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                            </span>
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">2</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Kependudukan dan Pencatatan Sipil<a/></td>
-                          <td class="align-middle text-center">2</td>
-                          <td class="align-middle text-center">4</td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"><a class="badge text-primary align-middle rounded-5"><i class="bi bi-clock-fill me-1"></i>proses</a></td>
-
+                          <td class="text-wrap text-decoration-none">Dinas Kependudukan dan Pencatatan Sipil</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
                         </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">3</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Perpustakaan dan Arsip<a/></td>
-                          <td class="align-middle text-center">3</td>
-                          <td class="align-middle text-center">1</td>
-                          <td class="align-middle text-center">-</td>
-                          <td class="align-middle text-center"><a class="badge text-success align-middle rounded-5"><i class="bi bi-check-circle-fill me-1"></i>selesai</a></td>
-                        </tr>
+                          <td class="text-wrap text-decoration-none">Dinas Perpustakaan dan Arsip</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
+                          </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">4</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Sosial<a/></td>
-                          <td class="align-middle text-center">1</td>
-                          <td class="align-middle text-center">2</td>
-                          <td class="align-middle text-center">-</td>
-                          <td class="align-middle text-center"><a class="badge text-success align-middle rounded-5"><i class="bi bi-check-circle-fill me-1"></i>selesai</a></td>
-                        </tr>
+                          <td class="text-wrap text-decoration-none">Dinas Sosial</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
+                          </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">5</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Kesehatan<a/></td>
-                          <td class="align-middle text-center">3</td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"><a class="badge text-primary align-middle rounded-5"><i class="bi bi-clock-fill me-1"></i>proses</a></td>
-                        </tr>
+                          <td class="text-wrap text-decoration-none">Dinas Kesehatan</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
+                          </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">6</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Pendidikan<a/></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"><a class="badge text-danger align-middle rounded-5"><i class="bi bi-x-circle-fill me-1"></i>belum</a></td>
-                        </tr>
+                          <td class="text-wrap text-decoration-none">Dinas Pendidikan</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
+                          </tr>
                         <tr>
                           <th scope="row" class="align-middle text-center">7</a></th>
-                          <td><a href="#" class="text-wrap text-decoration-none">Dinas Lingkungan Hidup<a/></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"></td>
-                          <td class="align-middle text-center"><a class="badge text-danger align-middle rounded-5"><i class="bi bi-x-circle-fill me-1"></i>belum</a></td>
-                        </tr>
+                          <td class="text-wrap text-decoration-none">Dinas Lingkungan Hidup</td>
+                            <td class="align-middle text-center">
+                              <a href="#" class="badge text-success align-middle rounded-5"><i class="bi bi-eye-fill me-1"></i>lihat</a>
+                              <span>
+                                <a href="#" class="badge text-danger align-middle rounded-5"><i class="bi bi-pencil-square me-1"></i>edit</a>
+                              </span>
+                            </td>
+                          </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
-              <!-- Table progres unit kerja end -->
+              <!-- Table unit kerja end -->
             </div>
           </div>
           <!-- Kolom kiri end -->
